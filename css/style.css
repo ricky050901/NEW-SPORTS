@@ -1,0 +1,176 @@
+/* すべてのページに適用される設定 */
+html{
+    font-size: 18px;
+    font-familiy: "明朝体”serif;
+}
+*{.
+  box-sizing: border-box;
+}
+body{.
+    margin: 0000;
+}.
+p, li, td{
+    line-height: 1.9;
+}
+a:link{
+    color: #4caf50;
+    text-decoration:none;
+}
+a:visited{
+    color: #4caf50;
+    text-decoration: none;
+}
+a:hover{
+    color: #4caf50;
+    text-decoration: underline;
+}
+a:active{
+    color: #4caf50;
+    text-decoration: underline;
+}
+img{
+    max-width: 100%;
+}
+
+/* すべてのページに適用 ヘッダー */
+.header {
+    padding-top: 50px;
+    background-image: url(../images/stripe.png);
+    background-repeat: repeat-x;
+}
+.logo{
+    text-align:center;
+}
+.nav ul{
+    margin: 35px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.nav a:link {
+    color: #6f4e37;
+}
+.nav a :visited {
+    color: #6f4e37;
+}
+.nav a:hover {
+    text-decoration: none;
+}
+.nav a:active {
+    text-decoration: none;
+}
+/* すべてのページに適用 ヒーロー */
+.hero{
+    pandding: 100px 0;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     color: #dedc6a;
+    text-align: center;
+}
+.hero.index { 
+    background-position: center;
+
+    padding: 250px 0;
+    background-image: 
+    url(../images/home-hero.jpg);
+}
+.hero.access {
+    background-image: url(../images/access-hero.jpg);
+}
+.hero.menu {
+    background-image:url(../images/menu-hero.jpg) ;
+}
+.hero.contact{
+    background-image:url(../images/contact-hero.jpg) ;
+}
+/* すべてのページに適用 メイン */
+main {
+    margin: 80px auto 80px auto;
+    max-width: 1000px;
+}
+main h2{
+    margin: 70px 0 30px 0;
+    border-bottom: 3px solid #6f4e37;
+    padding: 0 0 8px 0;
+    color: #6f4e37
+    front-size: 1.7rem
+}
+
+/* すべてのページに適用 フッター */
+.gotop{
+    text-align: center;
+}
+.copyrighit{
+    margin-top: 28px;
+    margin-bottom: 0;
+    padding-top: 70px;
+    padding-top: 70px;
+    background-color: #6f4e37;
+    color: #e76f51;
+    text-align: center;
+}
+
+/* 個別のスタイル */
+/* index.html */
+.logo.whale {text-align: center; }
+.shop-info {
+    border-collapse: collapse;
+}
+.shop-info th, .shop-info td {
+    border: 3px solid #1a237e;
+    pandding: 30px;
+}
+.shop-info th{
+    width: 122px;
+    text-align:  left;
+    vertical-align: top;
+}
+/* menu.html */
+.items{
+    display:grid;
+    grid-template-columns: lfr lfr;
+    gap: 25px;
+}
+
+/*contact.html*/
+from{
+    margin: 0 auto;
+    max-width: 650px;
+}
+input{type="text"},textarea{
+    padding:7px;
+    width:100%;
+    front-size:1.5rem;
+}
+textarea{
+    height: 134px;
+}
+.submit {
+    text-align: center;
+}
+input[type="submit"]{
+    border: : none;
+    padding: 27px;
+    width: 224px;
+    background-color: #2a9d8f
+    color: #6f4e37
+    font-size: 2rem;
+}
+
+/*　モバイル対応 */
+@media (max-width: 787px) {
+    .nav ul {
+        flex-wrap: wrap;
+        gap: 29px;
+    }
+    main { padding: 0 4%; }
+    /*index.html */
+    .hero.index { padding: 28vh 0; }
+    /* menu.html */
+    .items {
+        grid-template-columns: 1fr 1fr;
+     }
+    }
